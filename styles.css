@@ -1,0 +1,270 @@
+:root{
+    /* ## Colors */
+
+/* ### Primary */
+
+--Tomato: hsl(4, 100%, 67%);
+
+/* ### Neutral */
+
+--Dark-Slate-Grey: hsl(234, 29%, 20%);
+--Charcoal-Grey: hsl(235, 18%, 26%);
+--Grey: hsl(231, 7%, 60%);
+--White: hsl(0, 0%, 100%);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.section-subscribe{
+    /* display: none; */
+}
+
+.section-message{
+    display: none;
+}
+
+.header{
+
+}
+
+.header .img-mobile{
+
+}
+
+.header .img-desktop{
+    display: none;
+}
+
+.content{
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.content h1{
+    margin: 0;
+}
+
+.content p{
+    margin: 0;
+}
+
+.content .group{
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+    align-items: start;
+}
+
+.content .group img{
+    width: 20px;
+}
+
+.content .group p{
+    margin: 0;
+}
+
+.content .form-control{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.content .form-control.first .group{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.content .form-control.first .group .message-required{
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--Tomato);
+    display: none;
+}
+
+.content .form-control label{
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+.content .form-control input{
+    padding: 15px;
+    outline: none;
+    border: 1px solid var(--Grey);
+    border-radius: 5px;
+}
+
+.content .form-control button{
+    padding: 10px;
+    background-color: var(--Dark-Slate-Grey);
+    color: white;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    border: 0;
+}
+
+.content .form-control button:hover{
+    background-image: linear-gradient(to right, #FF527B, hsl(4, 100%, 67%));
+    transition: 0.2s;
+    box-shadow: 0 2px 10px hsl(4, 100%, 67%);
+}
+
+/* SECTION MESSAGE */
+
+.section-message{
+    height: 100vh;
+}
+
+.section-message .container{
+    padding: 20px;
+    height: 90%;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.card .group.first{
+    margin-top: 40px;
+}
+
+.card .icon-message{
+    width: 50px;
+}
+
+.card .title-message{
+    font-size: 2.2rem;
+    color: var(--Dark-Slate-Grey);
+    width: 300px;
+}
+
+.card .description-message{
+    width: 320px;
+    color: var(--Dark-Slate-Grey);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.card .description-message span{
+    font-weight: 800;
+}
+
+.card button{
+    width: 100%;
+    padding: 15px 0;
+    border-radius: 5px;
+    background-color: var(--Dark-Slate-Grey);
+    color: white;
+    font-weight: 600;
+    border: 0;
+    outline: none;
+    margin-top: auto;
+    cursor: pointer;
+}
+
+.card button:hover{
+    background-image: linear-gradient(to right, #FF527B, hsl(4, 100%, 67%));
+    transition: 0.2s;
+    box-shadow: 0 2px 10px hsl(4, 100%, 67%);
+}
+
+/* MESSAGE ERROR */
+
+.bg-input-error{
+    background-color: hsl(3, 85%, 92%) !important;
+    border: 1px solid var(--Tomato) !important;
+    color: var(--Tomato) !important;
+    font-weight: 500;
+}
+
+@media only screen and (min-width:1200px) {
+
+    body{
+        background-color: var(--Charcoal-Grey);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .section-subscribe{
+        display: flex;
+        width: 900px;
+        margin: 0 auto;
+        background: var(--White);
+        border-radius: 30px;
+        flex-direction: row-reverse;
+        column-gap: 35px;
+    }
+    .header{
+        padding: 20px;
+    }
+
+    .header .img-mobile{
+        display: none;
+    }
+
+    .header .img-desktop{
+        display: block;
+        border-radius: 20px;
+    }
+
+    .content{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 60px;
+        padding-right: 0;
+    }
+
+    .content h1{
+        margin-top: 40px;
+        font-size: 3rem;
+    }
+
+    .content .form-control{
+        margin-top: 20px;
+    }
+
+    .content .form-control.second{
+        margin: 0;
+    }
+
+    .content .form-control button{
+        padding: 15px 0;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    .content p{
+        margin-bottom: 10px;
+    }
+
+    /* SECTION MESSAGE */
+    .section-message{
+        height:500px;
+    }
+
+    .card{
+        background-color: white;
+        padding: 30px;
+        border-radius: 20px;
+        justify-content: start;
+        height: 300px;
+    }
+
+    .card .group.first{
+        margin: 0;
+    }
+}
